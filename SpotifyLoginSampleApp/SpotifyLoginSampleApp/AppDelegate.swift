@@ -1,33 +1,29 @@
 //
-//  AppDelegate.swift
-//  SpotifyLoginSampleApp
-//
-//  Created by 지정훈 on 2022/04/19.
-//
 
 import UIKit
 import Firebase
 import GoogleSignIn
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate{
+
+// 현재코드에서 GoogleSignIn의 버전은 6.2
+// 버전이 업데이트 되면서 GIDSignInDelegate 사라졌습니다. 버전에 맞게 관련된 코드는 주석 처리 및 삭제를 하였습니다.
+class AppDelegate: UIResponder, UIApplicationDelegate{
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-
+    
         //파이어베이스 초기화
         FirebaseApp.configure()
         
-        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
-        GIDSignIn.sharedInstance().delegate = self
         return true
     }
 
     //메소드 추가 구글의 인증 프로세스가 끝날때 앱이 수신하는 url이 처리하는 역할
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        return GIDSignIn.sharedInstance().handle(url)
+        //GIDSignIn.sharedInstance() -> GIDSignIn.sharedInstance 으로 변경
+        return GIDSignIn.sharedInstance.handle(url)
     }
-    
+
     
     // MARK: UISceneSession Lifecycle
 
@@ -42,35 +38,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate{
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-    //아직 구현 안함
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        if let error = error {
-            print("Error Google Sign In\(error.localizedDescription)")
-            return
-        }
-        guard let authentication = user.authentication else {return}
-        
-        
-        //credential 구글 <- 아이디 토큰 ,액세서토큰 부여 받은거 권한 위임
-        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken , accessToken: authentication.accessToken)
-        Auth.auth().signIn(with: credential) { _, _ in
-            //이상한거 
-            self.showMainViewController()
-        }
-    }
-    private func showMainViewController(){
-        
-        //인터넷에서 찾은거
-//        let scenes = UIApplication.shared.connectedScenes
-//        let windowScenes = scenes.first as? UIWindowScene
-//        let window = windowScenes?.windows.first
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let mainViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController")
-        mainViewController.modalPresentationStyle = .fullScreen
-        UIApplication.shared.windows.first?.rootViewController?.show(mainViewController,sender: nil)
-    }
-    
-
 }
-

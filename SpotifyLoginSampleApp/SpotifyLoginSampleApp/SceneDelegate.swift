@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  SpotifyLoginSampleApp
 //
-//  Created by 지정훈 on 2022/04/19.
+//  Created by 지정훈 on 2022/04/21.
 //
 
 import UIKit

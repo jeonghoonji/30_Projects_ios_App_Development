@@ -44,6 +44,6 @@ class MainViewController : UIViewController{
             self.navigationController?.popToRootViewController(animated: true)
         }catch let signOutError as NSError{
             print("ERROR: signout \(signOutError.localizedDescription)")
-        }       
+        }
     }
 }
