@@ -21,6 +21,7 @@
 		A7B5173F28119B2200C9090C /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B5173E28119B2200C9090C /* CardDetailViewController.swift */; };
 		A7B5174128119E9200C9090C /* credit-card-list.json in Resources */ = {isa = PBXBuildFile; fileRef = A7B5174028119E9200C9090C /* credit-card-list.json */; };
 		A7B5174328119E9C00C9090C /* money.json in Resources */ = {isa = PBXBuildFile; fileRef = A7B5174228119E9C00C9090C /* money.json */; };
+		A7B517452812D4E400C9090C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7B517442812D4E400C9090C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		A7B5173E28119B2200C9090C /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
 		A7B5174028119E9200C9090C /* credit-card-list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "credit-card-list.json"; sourceTree = "<group>"; };
 		A7B5174228119E9C00C9090C /* money.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = money.json; sourceTree = "<group>"; };
+		A7B517442812D4E400C9090C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				A7B5173B28118DD300C9090C /* CardListCell.xib */,
 				A7B5173428118BF200C9090C /* CardListViewController.swift */,
 				A7B5173E28119B2200C9090C /* CardDetailViewController.swift */,
+				A7B517442812D4E400C9090C /* GoogleService-Info.plist */,
 				A7B5172928118BD900C9090C /* Assets.xcassets */,
 				A7B5172B28118BD900C9090C /* LaunchScreen.storyboard */,
 				A7B5172E28118BD900C9090C /* Info.plist */,
@@ -178,6 +181,7 @@
 				A7B5172A28118BD900C9090C /* Assets.xcassets in Resources */,
 				A7B5172828118BD800C9090C /* Main.storyboard in Resources */,
 				A7B5173D28118DD300C9090C /* CardListCell.xib in Resources */,
+				A7B517452812D4E400C9090C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
