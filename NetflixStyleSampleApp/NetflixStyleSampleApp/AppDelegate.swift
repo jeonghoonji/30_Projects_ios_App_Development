@@ -1,12 +1,12 @@
 //
 //  AppDelegate.swift
-//  CreditCardList
+//  NetflixStyleSampleApp
 //
-//  Created by 지정훈 on 2022/04/21.
+//  Created by 지정훈 on 2022/05/21.
 //
 
 import UIKit
-import Firebase
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -14,7 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        FirebaseApp.configure()
         return true
     }
 

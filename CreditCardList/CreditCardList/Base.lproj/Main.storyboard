@@ -193,6 +193,9 @@
             <point key="canvasLocation" x="-797" y="120"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="coj-z3-ev2"/>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
