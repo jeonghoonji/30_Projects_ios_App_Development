@@ -13,6 +13,10 @@
 		A76905B22838AF8300792240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76905B02838AF8300792240 /* LaunchScreen.storyboard */; };
 		A76905BA2838B00700792240 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76905B92838B00700792240 /* HomeViewController.swift */; };
 		A76905BD2838B65700792240 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A76905BC2838B65700792240 /* SnapKit */; };
+		A76905BF28390B4700792240 /* Content.plist in Resources */ = {isa = PBXBuildFile; fileRef = A76905BE28390B4700792240 /* Content.plist */; };
+		A76905C12839362500792240 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76905C02839362500792240 /* Content.swift */; };
+		A76905C328393C3E00792240 /* ContentCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76905C228393C3E00792240 /* ContentCollectionView.swift */; };
+		A76905C528393E9000792240 /* ContentCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76905C428393E9000792240 /* ContentCollectionViewHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		A76905B12838AF8300792240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A76905B32838AF8300792240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A76905B92838B00700792240 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A76905BE28390B4700792240 /* Content.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Content.plist; sourceTree = "<group>"; };
+		A76905C02839362500792240 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		A76905C228393C3E00792240 /* ContentCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionView.swift; sourceTree = "<group>"; };
+		A76905C428393E9000792240 /* ContentCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,10 @@
 				A76905B02838AF8300792240 /* LaunchScreen.storyboard */,
 				A76905B32838AF8300792240 /* Info.plist */,
 				A76905B92838B00700792240 /* HomeViewController.swift */,
+				A76905C428393E9000792240 /* ContentCollectionViewHeader.swift */,
+				A76905C02839362500792240 /* Content.swift */,
+				A76905C228393C3E00792240 /* ContentCollectionView.swift */,
+				A76905BE28390B4700792240 /* Content.plist */,
 			);
 			path = NetflixStyleSampleApp;
 			sourceTree = "<group>";
@@ -132,6 +144,7 @@
 			files = (
 				A76905B22838AF8300792240 /* LaunchScreen.storyboard in Resources */,
 				A76905AF2838AF8300792240 /* Assets.xcassets in Resources */,
+				A76905BF28390B4700792240 /* Content.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,8 +156,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A76905A62838AF8000792240 /* AppDelegate.swift in Sources */,
+				A76905C528393E9000792240 /* ContentCollectionViewHeader.swift in Sources */,
 				A76905A82838AF8000792240 /* SceneDelegate.swift in Sources */,
+				A76905C328393C3E00792240 /* ContentCollectionView.swift in Sources */,
 				A76905BA2838B00700792240 /* HomeViewController.swift in Sources */,
+				A76905C12839362500792240 /* Content.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
