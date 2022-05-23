@@ -24,7 +24,7 @@ class HomeViewController : UICollectionViewController{
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.hidesBarsOnSwipe = true
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "netflix_icon"), style: .plain, target: nil, action: nil)
+        //navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "netflix_icon"), style: .plain, target: nil, action: nil)
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "person.crop.circle"), style: .plain, target: nil, action: nil)
         
         //data 설정,가져오기
@@ -93,7 +93,6 @@ extension HomeViewController{
 
 
 // swiftui를 활용한 미리보기
-
 struct HomeViewController_Previews: PreviewProvider {
     static var previews: some View {
         Container().edgesIgnoringSafeArea(.all)
@@ -101,10 +100,11 @@ struct HomeViewController_Previews: PreviewProvider {
     
     struct Container: UIViewControllerRepresentable {
         func makeUIViewController(context: Context) -> UIViewController {
-            let layout = UICollectionViewFlowLayout()
+            let layout = UICollectionViewLayout()
             let homeViewController = HomeViewController(collectionViewLayout: layout)
             return UINavigationController(rootViewController: homeViewController)
         }
+         
         func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {}
         typealias UIViewControllerType = UIViewController
     }
