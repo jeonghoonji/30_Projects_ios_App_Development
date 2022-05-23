@@ -23,7 +23,6 @@ struct Content: Decodable{
 struct Item : Decodable{
     let description : String
     let imageName : String
-    
     var image : UIImage{
         return UIImage(named: imageName) ?? UIImage()
     }
