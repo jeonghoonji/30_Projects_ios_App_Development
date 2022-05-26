@@ -17,6 +17,7 @@ struct Content: Decodable{
         case main
         case large
         case rank
+        
     }
 
 }
