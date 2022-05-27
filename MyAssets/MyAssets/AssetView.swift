@@ -15,6 +15,8 @@ struct AssetView: View {
                     // 빈공간 만듬
                     Spacer()
                     AssetMenuGridView()
+                    AssetBannerView()
+                        .aspectRatio(contentMode: .fit)
                 }
             }
             .background(Color.gray.opacity(0.2))
@@ -26,5 +28,6 @@ struct AssetView: View {
 struct AssetView_Previews: PreviewProvider {
     static var previews: some View {
         AssetView()
+        
     }
 }
