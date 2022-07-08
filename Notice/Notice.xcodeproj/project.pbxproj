@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A71C1C5A287725AF002113CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A71C1C59287725AF002113CE /* GoogleService-Info.plist */; };
 		A74C1E6D2875B8F0000CB391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74C1E6C2875B8F0000CB391 /* AppDelegate.swift */; };
 		A74C1E6F2875B8F0000CB391 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74C1E6E2875B8F0000CB391 /* SceneDelegate.swift */; };
 		A74C1E712875B8F0000CB391 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74C1E702875B8F0000CB391 /* ViewController.swift */; };
@@ -15,13 +16,16 @@
 		A74C1E792875B8F1000CB391 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A74C1E772875B8F1000CB391 /* LaunchScreen.storyboard */; };
 		A74C1E842875B966000CB391 /* Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74C1E822875B966000CB391 /* Notice.swift */; };
 		A74C1E852875B966000CB391 /* Notice.xib in Resources */ = {isa = PBXBuildFile; fileRef = A74C1E832875B966000CB391 /* Notice.xib */; };
-		A74C1E892875C226000CB391 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A74C1E882875C226000CB391 /* GoogleService-Info.plist */; };
+		A74C1E8B2875C6B3000CB391 /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = A74C1E8A2875C6B3000CB391 /* RemoteConfigDefaults.plist */; };
+		A74C1E90287718F5000CB391 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74C1E8E287718F5000CB391 /* NoticeViewController.swift */; };
+		A74C1E91287718F5000CB391 /* NoticeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A74C1E8F287718F5000CB391 /* NoticeViewController.xib */; };
 		AA55B17E01B74F05D52B813D /* Pods_Notice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060748F0FFC510C0E69AF579 /* Pods_Notice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		060748F0FFC510C0E69AF579 /* Pods_Notice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4769A19B059261EB9C7E47B0 /* Pods-Notice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notice.release.xcconfig"; path = "Target Support Files/Pods-Notice/Pods-Notice.release.xcconfig"; sourceTree = "<group>"; };
+		A71C1C59287725AF002113CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		A74C1E692875B8F0000CB391 /* Notice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74C1E6C2875B8F0000CB391 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A74C1E6E2875B8F0000CB391 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,7 +36,9 @@
 		A74C1E7A2875B8F1000CB391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A74C1E822875B966000CB391 /* Notice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notice.swift; sourceTree = "<group>"; };
 		A74C1E832875B966000CB391 /* Notice.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Notice.xib; sourceTree = "<group>"; };
-		A74C1E882875C226000CB391 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A74C1E8A2875C6B3000CB391 /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
+		A74C1E8E287718F5000CB391 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
+		A74C1E8F287718F5000CB391 /* NoticeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoticeViewController.xib; sourceTree = "<group>"; };
 		E97CCAC6EDE5EE6666E1D4C8 /* Pods-Notice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notice.debug.xcconfig"; path = "Target Support Files/Pods-Notice/Pods-Notice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,14 +84,17 @@
 			isa = PBXGroup;
 			children = (
 				A74C1E6C2875B8F0000CB391 /* AppDelegate.swift */,
+				A74C1E8E287718F5000CB391 /* NoticeViewController.swift */,
+				A74C1E8F287718F5000CB391 /* NoticeViewController.xib */,
+				A74C1E8A2875C6B3000CB391 /* RemoteConfigDefaults.plist */,
 				A74C1E822875B966000CB391 /* Notice.swift */,
 				A74C1E832875B966000CB391 /* Notice.xib */,
 				A74C1E6E2875B8F0000CB391 /* SceneDelegate.swift */,
 				A74C1E702875B8F0000CB391 /* ViewController.swift */,
-				A74C1E882875C226000CB391 /* GoogleService-Info.plist */,
 				A74C1E722875B8F0000CB391 /* Main.storyboard */,
 				A74C1E752875B8F1000CB391 /* Assets.xcassets */,
 				A74C1E772875B8F1000CB391 /* LaunchScreen.storyboard */,
+				A71C1C59287725AF002113CE /* GoogleService-Info.plist */,
 				A74C1E7A2875B8F1000CB391 /* Info.plist */,
 			);
 			path = Notice;
@@ -97,7 +106,6 @@
 				E97CCAC6EDE5EE6666E1D4C8 /* Pods-Notice.debug.xcconfig */,
 				4769A19B059261EB9C7E47B0 /* Pods-Notice.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -161,11 +169,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A74C1E8B2875C6B3000CB391 /* RemoteConfigDefaults.plist in Resources */,
+				A74C1E91287718F5000CB391 /* NoticeViewController.xib in Resources */,
 				A74C1E792875B8F1000CB391 /* LaunchScreen.storyboard in Resources */,
 				A74C1E852875B966000CB391 /* Notice.xib in Resources */,
-				A74C1E892875C226000CB391 /* GoogleService-Info.plist in Resources */,
 				A74C1E762875B8F1000CB391 /* Assets.xcassets in Resources */,
 				A74C1E742875B8F0000CB391 /* Main.storyboard in Resources */,
+				A71C1C5A287725AF002113CE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +232,7 @@
 				A74C1E842875B966000CB391 /* Notice.swift in Sources */,
 				A74C1E6D2875B8F0000CB391 /* AppDelegate.swift in Sources */,
 				A74C1E6F2875B8F0000CB391 /* SceneDelegate.swift in Sources */,
+				A74C1E90287718F5000CB391 /* NoticeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,15 +1,11 @@
 //
 //  SceneDelegate.swift
-//  Notice
+//  firebase_test
 //
-//  Created by 지정훈 on 2022/07/06.
+//  Created by 지정훈 on 2022/07/07.
 //
 
 import UIKit
-import AppTrackingTransparency
-import FirebaseAnalytics
-
-
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -50,36 +46,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-//    func sceneDidBecomeActive(_ scene: UIScene) {
-//            
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//                //ATT Framework
-//                if #available(iOS 14, *) {
-//                    ATTrackingManager.requestTrackingAuthorization { status in
-//                        switch status{
-//                        case .notDetermined:
-//                            print("notDetermined")
-//                            Analytics.setAnalyticsCollectionEnabled(false)
-//                        case .restricted:
-//                            print("restricted")
-//                            Analytics.setAnalyticsCollectionEnabled(false)
-//                        case .denied:
-//                            print("denied")
-//                            Analytics.setAnalyticsCollectionEnabled(false)
-//                        case .authorized:
-//                            print("authorized") //애널리틱스 수집 가능
-//                            Analytics.setAnalyticsCollectionEnabled(true)
-//                        @unknown default:
-//                            print("unknown")
-//                            Analytics.setAnalyticsCollectionEnabled(false)
-//                        }
-//                    }
-//                } else {
-//                    // Fallback on earlier versions
-//                }
-//            }
-//            
-//        }
 
 
 }
