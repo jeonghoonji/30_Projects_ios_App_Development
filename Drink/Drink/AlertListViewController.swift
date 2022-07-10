@@ -7,11 +7,13 @@
 
 import Foundation
 import UIKit
-
+import UserNotifications
 
 class AlertListViewController: UITableViewController{
     
     var alerts : [Alert] = []
+    
+    let userNotificaitonCenter = UNUserNotificationCenter.current()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +27,7 @@ class AlertListViewController: UITableViewController{
         alerts = alertList()
     }
     
-    @IBAction func addAlertButtonAction(_ sender: Any) {
+    @IBAction func addAlertButtonAction(_ sender: UIBarButtonItem) {
         guard let addAlertVC = storyboard?.instantiateViewController(withIdentifier: "AddAlertViewController") as? AddAlertViewController else {return}
         
         addAlertVC.pickedDate = { [weak self] date in
@@ -42,6 +44,9 @@ class AlertListViewController: UITableViewController{
             self.alerts = alertList
             
             UserDefaults.standard.set(try? PropertyListEncoder().encode(self.alerts), forKey: "alerts")
+            
+            self.userNotificaitonCenter.addNotificationRequest(by: newAlert)
+            
             self.tableView.reloadData()
             
         }
@@ -101,11 +106,15 @@ extension AlertListViewController{
             UserDefaults.standard.set(try? PropertyListEncoder().encode(self.alerts), forKey: "alerts")
             self.tableView.reloadData()
             
+            userNotificaitonCenter.removePendingNotificationRequests(withIdentifiers: [alerts[indexPath.row].id])
+            
+            self.tableView.reloadData()
          //???
         return
         default:
             break
         }
     }
+    
 
 }
