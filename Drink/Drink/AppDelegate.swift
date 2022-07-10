@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  firebase_test
+//  Drink
 //
-//  Created by 지정훈 on 2022/07/07.
+//  Created by 지정훈 on 2022/07/09.
 //
 
 import UIKit
